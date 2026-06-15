@@ -1,7 +1,7 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
-import { navLinks } from "../../constants/index.js";
+import { BRAND_NAME, navLinks } from "../../constants/index.js";
 import { useRef } from "react";
 
 const Navbar = () => {
@@ -31,9 +31,9 @@ const Navbar = () => {
   return (
     <nav ref={navElement}>
       <div>
-        <a href="#home" className="flex items-center gap-2">
-          <img src="/images/logo.png" alt="logo" />
-          <p>Velvet Pour</p>
+        <a href="#hero" className="flex items-center gap-2">
+          <img src="/images/logo.png" alt={`Logo ${BRAND_NAME}`} />
+          <p>{BRAND_NAME}</p>
         </a>
 
         <ul>

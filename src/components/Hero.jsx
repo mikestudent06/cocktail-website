@@ -74,37 +74,37 @@ const Hero = () => {
   return (
     <>
       <section id="hero" className="noisy">
-        <h1 className="title">Beber Vida</h1>
+        <h1 className="title">COCO</h1>
 
         <img
           src="/images/hero-left-leaf.png"
-          alt="left-leaf"
+          alt="Feuille décorative gauche"
           className="left-leaf"
         />
         <img
           src="/images/hero-right-leaf.png"
-          alt="right-leaf"
+          alt="Feuille décorative droite"
           className="right-leaf"
         />
 
         <div className="body">
-          <img src="/images/arrow.png" alt="arrow" className="arrow" />
+          <img src="/images/arrow.png" alt="Flèche vers le bas" className="arrow" />
 
           <div className="content">
             <div className="space-y-5 hidden md:block">
-              <p>Cool. Crisp. Classic.</p>
+              <p>Frais. Audacieux. Inoubliable.</p>
               <p className="subtitle">
-                Sip the Spirit <br /> of Summer
+                L'esprit du cocktail <br /> à Brazzaville
               </p>
             </div>
 
             <div className="view-cocktails">
               <p className="subtitle">
-                Every cocktail on our menu is a blend of premium ingredients,
-                creative flair, and timeless recipes — designed to delight your
-                senses.
+                COCO vous accueille au cœur de Brazzaville pour des cocktails
+                signature, des mocktails rafraîchissants et un service bar sur
+                mesure pour vos soirées et événements privés.
               </p>
-              <a href="#cocktails">View cocktails</a>
+              <a href="#cocktails">Découvrir la carte</a>
             </div>
           </div>
         </div>

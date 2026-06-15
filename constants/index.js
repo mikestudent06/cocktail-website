@@ -1,3 +1,5 @@
+const BRAND_NAME = "COCO";
+
 const navLinks = [
   {
     id: "cocktails",
@@ -5,11 +7,11 @@ const navLinks = [
   },
   {
     id: "about",
-    title: "À Propos",
+    title: "À propos",
   },
   {
-    id: "work",
-    title: "L’Art",
+    id: "art",
+    title: "L'art",
   },
   {
     id: "contact",
@@ -20,52 +22,52 @@ const navLinks = [
 const cocktailLists = [
   {
     name: "Ngoki Punch",
-    country: "CG",
-    detail: "Bouteille 500 ml",
+    country: "Signature COCO",
+    detail: "Verre 350 ml",
     price: "5 000 FCFA",
   },
   {
-    name: "M’bolo Mojito",
-    country: "CG",
+    name: "M'bolo Mojito",
+    country: "Signature COCO",
     detail: "Verre 300 ml",
     price: "3 500 FCFA",
   },
   {
     name: "Palm Wine Spritz",
-    country: "CG",
-    detail: "Calebasse locale",
-    price: "2 000 FCFA",
+    country: "Signature COCO",
+    detail: "Verre 300 ml",
+    price: "4 000 FCFA",
   },
   {
     name: "Rhum Nkéni",
-    country: "CG",
-    detail: "Bouteille 700 ml",
-    price: "7 000 FCFA",
+    country: "Signature COCO",
+    detail: "Verre 350 ml",
+    price: "4 500 FCFA",
   },
 ];
 
 const mockTailLists = [
   {
     name: "Jus de Bissap Glacé",
-    country: "CG",
+    country: "Sans alcool",
     detail: "Verre 250 ml",
     price: "1 500 FCFA",
   },
   {
     name: "Tamarin Twist",
-    country: "CG",
+    country: "Sans alcool",
     detail: "Verre 250 ml",
     price: "2 000 FCFA",
   },
   {
     name: "Mangue Sunrise",
-    country: "CG",
+    country: "Sans alcool",
     detail: "Verre 300 ml",
     price: "2 500 FCFA",
   },
   {
     name: "Ananas Fizz",
-    country: "CG",
+    country: "Sans alcool",
     detail: "Verre 300 ml",
     price: "2 500 FCFA",
   },
@@ -101,30 +103,25 @@ const goodLists = [
 ];
 
 const storeInfo = {
-  heading: "Où Nous Trouver",
+  heading: "Où nous trouver",
   address: "Avenue Matsoua, Centre-ville, Brazzaville, Congo",
+  tagline: "Bar à cocktails & service événementiel",
   contact: {
     phone: "+242 06 987 6543",
-    email: "contact@brazzacocktail.com",
+    email: "contact@barcoco.cg",
   },
 };
 
 const openingHours = [
-  { day: "Lun–Jeu", time: "11h00 – 23h00" },
-  { day: "Ven", time: "11h00 – 01h00" },
-  { day: "Sam", time: "09h00 – 01h00" },
-  { day: "Dim", time: "09h00 – 22h00" },
+  { day: "Lun–Jeu", time: "17h00 – 23h00" },
+  { day: "Ven–Sam", time: "17h00 – 01h00" },
+  { day: "Dim", time: "15h00 – 22h00" },
 ];
 
 const socials = [
   {
     name: "Instagram",
     icon: "/images/insta.png",
-    url: "#",
-  },
-  {
-    name: "X (Twitter)",
-    icon: "/images/x.png",
     url: "#",
   },
   {
@@ -141,7 +138,7 @@ const allCocktails = [
     image: "/images/drink1.png",
     title: "Des ingrédients simples, une saveur audacieuse",
     description:
-      "Préparé avec du rhum local, du citron vert et de la menthe fraîche, ce Mojito est un incontournable des soirées chaudes de Brazzaville. Ajoutez un bord salé pour encore plus de caractère.",
+      "Préparé au bar COCO avec du rhum local, du citron vert et de la menthe fraîche, ce Mojito est l'incontournable des soirées chaudes à Brazzaville. Servi avec un bord salé pour encore plus de caractère.",
   },
   {
     id: 2,
@@ -149,7 +146,7 @@ const allCocktails = [
     image: "/images/drink2.png",
     title: "Un classique fruité qui séduit toujours",
     description:
-      "Un équilibre parfait entre le citron vert acidulé, le rhum doux et la fraîcheur de la framboise. Idéal pour les apéros au bord du fleuve Congo.",
+      "L'équilibre parfait entre le citron vert acidulé, le rhum doux et la fraîcheur de la framboise. Idéal en apéritif sur notre terrasse, au bord du fleuve Congo.",
   },
   {
     id: 3,
@@ -157,7 +154,7 @@ const allCocktails = [
     image: "/images/drink3.png",
     title: "Saveurs locales, créativité mondiale",
     description:
-      "Mélange subtil de rhum blanc, sirop de bissap et touche florale. Inspiré des marchés colorés de Brazzaville.",
+      "Création signature COCO : rhum blanc, sirop de bissap et touche florale. Inspirée des marchés colorés de Brazzaville, disponible sur place ou en service événementiel.",
   },
   {
     id: 4,
@@ -165,11 +162,12 @@ const allCocktails = [
     image: "/images/drink4.png",
     title: "Préparé avec soin, servi avec passion",
     description:
-      "Un cocktail tropical revisité avec une touche de curaçao bleu, évoquant les couchers de soleil sur Pointe-Noire.",
+      "Un cocktail tropical revisité avec une touche de curaçao bleu, évoquant les couchers de soleil congolais. Préparé à la commande par nos barmans.",
   },
 ];
 
 export {
+  BRAND_NAME,
   navLinks,
   cocktailLists,
   mockTailLists,

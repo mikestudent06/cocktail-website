@@ -29,24 +29,27 @@ const About = () => {
 	 <div className="mb-16 md:px-0 px-5">
 		<div className="content">
 		 <div className="md:col-span-8">
-			<p className="badge">Best Cocktails</p>
+			<p className="badge">Bar à cocktails</p>
 			<h2>
-			 Where every detail matters <span className="text-white">-</span>
-				from muddle to garnish
+			 Chaque détail compte <span className="text-white">—</span>
+			 du muddling à la garniture
 			</h2>
 		 </div>
 		 
 		 <div className="sub-content">
 			<p>
-			 Every cocktail we serve is a reflection of our obsession with detail — from the first muddle to the final garnish. That care is what turns a simple drink into something truly memorable.
+			 Chez COCO, chaque verre raconte une histoire. Nos barmans sélectionnent
+			 des ingrédients locaux, maîtrisent les classiques et inventent des
+			 créations signature pour transformer un simple cocktail en un moment
+			 mémorable — sur place, en terrasse ou lors de vos événements privés.
 			</p>
 			
 			<div>
 			 <p className="md:text-3xl text-xl font-bold">
-				<span>4.5</span>/5
+				<span>4,8</span>/5
 			 </p>
 			 <p className="text-sm text-white-100">
-				More than +12000 customers
+				Plus de 2 000 clients satisfaits
 			 </p>
 			</div>
 		 </div>
@@ -56,29 +59,29 @@ const About = () => {
 	 <div className="top-grid">
 		<div className="md:col-span-3">
 		 <div  className="noisy" />
-		 <img src="/images/abt1.png" alt="grid-img-1" />
+		 <img src="/images/abt1.png" alt="Cocktail préparé au bar COCO" />
 		</div>
 		
 		<div className="md:col-span-6">
 		 <div  className="noisy" />
-		 <img src="/images/abt2.png" alt="grid-img-2" />
+		 <img src="/images/abt2.png" alt="Ambiance du bar COCO à Brazzaville" />
 		</div>
 		
 		<div className="md:col-span-3">
 		 <div  className="noisy" />
-		 <img src="/images/abt5.png" alt="grid-img-5" />
+		 <img src="/images/abt5.png" alt="Ingrédients frais pour cocktails" />
 		</div>
 	 </div>
 	 
 	 <div className="bottom-grid">
 		<div className="md:col-span-8">
 		 <div  className="noisy" />
-		 <img src="/images/abt3.png" alt="grid-img-3" />
+		 <img src="/images/abt3.png" alt="Service bar COCO pour événements" />
 		</div>
 		
 		<div className="md:col-span-4">
 		 <div  className="noisy" />
-		 <img src="/images/abt4.png" alt="grid-img-4" />
+		 <img src="/images/abt4.png" alt="Cocktail signature COCO" />
 		</div>
 	 </div>
 	 

@@ -1,4 +1,4 @@
-import { openingHours, socials } from "../../constants/index.js";
+import { openingHours, socials, storeInfo } from "../../constants/index.js";
 import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/all";
 import gsap from "gsap";
@@ -46,31 +46,42 @@ const Contact = () => {
     <footer id="contact">
       <img
         src="/images/footer-right-leaf.png"
-        alt="leaf-right"
+        alt=""
+        aria-hidden="true"
         id="f-right-leaf"
       />
       <img
         src="/images/footer-left-leaf.png"
-        alt="leaf-left"
+        alt=""
+        aria-hidden="true"
         id="f-left-leaf"
       />
 
       <div className="content">
-        <h2>Where to Find Us</h2>
+        <h2>{storeInfo.heading}</h2>
 
         <div>
-          <h3>Visit Our Bar</h3>
-          <p>456, Raq Blvd. #404, Los Angeles, CA 90210</p>
+          <h3>Venez au bar</h3>
+          <p>{storeInfo.address}</p>
+          <p className="text-white-100">{storeInfo.tagline}</p>
         </div>
 
         <div>
-          <h3>Contact Us</h3>
-          <p>(555) 987-6543</p>
-          <p>hello@cocktail.com</p>
+          <h3>Nous contacter</h3>
+          <p>
+            <a href={`tel:${storeInfo.contact.phone.replace(/\s/g, "")}`}>
+              {storeInfo.contact.phone}
+            </a>
+          </p>
+          <p>
+            <a href={`mailto:${storeInfo.contact.email}`}>
+              {storeInfo.contact.email}
+            </a>
+          </p>
         </div>
 
         <div>
-          <h3>Open Every Day</h3>
+          <h3>Horaires d'ouverture</h3>
           {openingHours.map((time) => (
             <p key={time.day}>
               {time.day} : {time.time}
@@ -79,7 +90,7 @@ const Contact = () => {
         </div>
 
         <div>
-          <h3>Socials</h3>
+          <h3>Réseaux sociaux</h3>
 
           <div className="flex-center gap-5">
             {socials.map((social) => (
@@ -90,7 +101,7 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 aria-label={social.name}
               >
-                <img src={social.icon} />
+                <img src={social.icon} alt="" />
               </a>
             ))}
           </div>

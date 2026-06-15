@@ -28,13 +28,13 @@ const Art = () => {
  return (
 	<div id="art">
 	 <div className="container mx-auto h-full pt-20">
-		<h2 className="will-fade">The ART</h2>
+		<h2 className="will-fade art-hero-title">L'art du cocktail</h2>
 		
 		<div className="content">
 		 <ul className="space-y-4 will-fade">
 			{goodLists.map((feature, index) => (
 			 <li key={index} className="flex items-center gap-2">
-				<img src="/images/check.png" alt="check" />
+				<img src="/images/check.png" alt="" aria-hidden="true" />
 				<p>{feature}</p>
 			 </li>
 			))}
@@ -43,15 +43,15 @@ const Art = () => {
 		 <div className="cocktail-img">
 			<img
 				src="/images/under-img.jpg"
-				alt="cocktail"
-				className="abs-center masked-img size-full object-contain"
+			 alt="Cocktail préparé avec soin chez COCO"
+				className="masked-img w-full h-full object-cover object-center"
 			/>
 		 </div>
 		 
 		 <ul className="space-y-4 will-fade">
 			{featureLists.map((feature, index) => (
 			 <li key={index} className="flex items-center justify-start gap-2">
-				<img src="/images/check.png" alt="check" />
+				<img src="/images/check.png" alt="" aria-hidden="true" />
 				<p className="md:w-fit w-60">{feature}</p>
 			 </li>
 			))}
@@ -59,10 +59,10 @@ const Art = () => {
 		</div>
 		
 		<div className="masked-container">
-		 <h2 className="will-fade">Sip-Worthy Perfection</h2>
+		 <h2 className="will-fade">Une perfection à savourer</h2>
 		 <div id="masked-content">
-			<h3>Made with Craft, Poured with Passion</h3>
-			<p>This isn’t just a drink. It’s a carefully crafted moment made just for you.</p>
+			<h3>Préparé avec art, servi avec passion</h3>
+			<p>Ce n'est pas qu'un verre. C'est un moment signé COCO, pensé pour sublimer chaque occasion.</p>
 		 </div>
 		</div>
 	 </div>
